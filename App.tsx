@@ -1,5 +1,6 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Sidebar from './components/Sidebar';
 import ToolCard from './components/ToolCard';
 import ManagementTable from './components/ManagementTable';
@@ -215,6 +216,7 @@ const App: React.FC = () => {
           </div>
         </div>
       )}
+      <SpeedInsights />
     </div>
   );
 };
